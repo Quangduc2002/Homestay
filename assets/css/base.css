@@ -39,80 +39,38 @@ body{
     }
 }
 
+
+
+
 .col-6{
     width: 50%;
 }
 
-@media (min-width: 1025px){
-    .link__icon-menu{
+.nav__input{
+    display: none;
+}
+
+@media (min-width: 1026px){
+    .ti-menu {
         display: none;
     }
-    
-}
 
-@media (max-width: 1024px){
-    .app{
-        overflow: hidden;
-    }
-
-    .header__navbar{
-        padding: 16px 12px;
-    }
-
-    .header__search{
-        width: 500px;
-    }
-
-    .header__search-input{
-        width: 150px;
-    }
-
-    .container__avt-img{
-        width: 932px;
-    }
-
-    .product__cover-img {
-        width: 176px;
-    }
-
-    .slick__right{
-        left: 134px;
-    }
-
-
-    .title__sub-slick--char{
-        width: 200px;
-    }
-
-    .title__img{
-        width: 200px;
-    }
-
-    .slick__right1{
-        left: 158px;
-    }
-
-    h2{
-        font-size: 2.5rem;
-    }
-
-    .end__md img{
-        width: 484px;
-        height: 484px;
-    }
-
-    .row__wide1-char{
-        padding: 0;
-        margin: 0;
-    }
-
-    .widget{
-        margin-right: 20px;
-    }
-    .widget__title{
-        font-size: 1.17rem;
+    .menu__item-close{
+        display: none;
     }
 }
+
+@media (min-width: 760px) and (max-width: 1025px){
+    .ti-menu {
+        display: none;
+    }
+
+    .menu__item-close{
+        display: none;
+    }
+}
+
+
 
 @media (max-width: 740px){
     .header__navbar-logocon,
@@ -151,10 +109,7 @@ body{
         color: #666;
     }
 
-    .header__navbar-menu:hover .header__navbar-menu--item{
-        display: block;
-        animation: headernotify ease-in 0.2s;
-    }
+    
 
     .header__navbar-menu--item{
         display: block;
@@ -162,25 +117,17 @@ body{
         background-color: #fff;
         padding: 0;
         margin: 0;
-        top: 50px;
+        top: 52px;
         width: 300px;
         height: 450px;
-        right: -20px;
+        right: 60px;
         border: 1px solid #dbdbdb;
         box-shadow: 0 2px 8px 0 #e7e7e7;
         display: none;
 
     }
-
     .header__navbar-menu--item::before{
-        content: "";
-        content: "";
-        border-color: transparent transparent #e7e7e7 transparent;
-        border-width: 11px 14px;
-        border-style: solid;
-        position: absolute;
-        top: -22px;
-        right: 16px;
+        display: none;
     }
 
     .menu__item-nation--menucha{
@@ -333,6 +280,77 @@ body{
     }
 }
 
+
+@media (max-width: 1024px){
+    #app{
+        overflow: hidden;
+    }
+
+    .header__navbar{
+        padding: 16px 12px;
+    }
+
+    .header__search{
+        width: 500px;
+    }
+
+    .header__search-input{
+        width: 150px;
+    }
+
+    .container__avt-img{
+        width: 932px;
+    }
+
+    .product__cover-img {
+        width: 176px;
+    }
+
+    .slick__right{
+        left: 134px;
+    }
+
+
+    .title__sub-slick--char{
+        width: 200px;
+    }
+
+    .title__img{
+        width: 200px;
+    }
+
+    .slick__right1{
+        left: 158px;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .end__md img{
+        width: 484px;
+        height: 484px;
+    }
+
+    .row__wide1-char{
+        padding: 0;
+        margin: 0;
+    }
+
+    .widget{
+        margin-right: 20px;
+    }
+    .widget__title{
+        font-size: 1.17rem;
+    }
+}
+
+
+
+
+
+
+
 /* ipx */
 @media (max-width: 375px){
     .header__search,
@@ -387,6 +405,41 @@ body{
 
     .title__img{
         width: 286px;
+    }
+
+
+    .header__navbar-menu--item{
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        padding: 0;
+        margin: 0;
+        top: -16px;
+        width: 300px;
+        height: 1000px;
+        right: 60px;
+        border: 1px solid #dbdbdb;
+        box-shadow: 0 2px 8px 0 #e7e7e7;
+        transform: translateX(-100%);
+        transition: transform linear 0.2s;  /* trượt từ ngoài vào */
+        
+    }
+    
+    .nav__input:checked ~ .header__navbar-menu--item{
+        display: block;
+        transform: translateX(0);
+    }
+    
+    .menu__item-close{
+        position: relative;
+        right: 9px;
+        font-size: 50px;
+        text-decoration: none;
+        color: #333;
+        top: 18px;
+        width: 30px;
+        height: 30px;
+        
     }
 
 

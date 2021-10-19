@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homestay</title>
+    <link rel="icon" href="https://www.luxstay.com/logos/96.png" type="image/gif" sizes="20x20">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/base.css">
 </head>
 <body>
-    <div class="app">
+    <div id="app">
         <header class="header">
             <div class="header__navbar">
                 <div class="header__navbar-logo">
@@ -96,80 +97,87 @@
                         </button>
                     </div>
                 </div>
+
+                
                 <div class="header__navbar-menu">
-                    <div class="link__icon-menu">
+                    <!-- dùng thẻ label để bấm vào icon thì sẽ checkbox được -->
+                    <label for="nav__mobi-input" class="link__icon-menu">
                         <i class="ti-menu icon-menu"></i>
-                    </div>
+                    </label>
+                    
+                    <input type="checkbox" name="" id="nav__mobi-input" class="nav__input">
+
                     <ul class="header__navbar-menu--item">
-                        <li class="menu__item">
-                            <a href="" class="menu__item-link">Guide</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__item-link">Host</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__item-link">Đăng kí</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__item-link">Đăng nhập</a>
-                        </li>
-                        <div class="menu__item menu__item-nation">
-                            <div class="menu__item-nation--con1">
-                                  <img src="./assets/img/anh1.svg" alt="" width="24px" height="24px" class="menu__item-nation--jpg">
-                                  <span class="menu__item-nation--countryname">VND</span>
-                                  <i class="menu__item-nation--icon ti-angle-down icon__angle--down"></i>   
-                            </div>
-                            <div class="menu__item-nation--menucha">
-                                 <div class="menu__item-nation--menucha1">
-                                     <div class="menu__item-nation--menucon">
+                            <label for="nav__mobi-input" class="menu__item1">
+                                    <i class="menu__item-close">&times;</i>
+                            </label>
+                            <li class="menu__item">
+                                <a href="" class="menu__item-link">Guide</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__item-link">Host</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__item-link">Đăng kí</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__item-link">Đăng nhập</a>
+                            </li>
+                            <div class="menu__item menu__item-nation">
+                                <div class="menu__item-nation--con1">
+                                      <img src="./assets/img/anh1.svg" alt="" width="24px" height="24px" class="menu__item-nation--jpg">
+                                      <span class="menu__item-nation--countryname">VND</span>
+                                      <i class="menu__item-nation--icon ti-angle-down icon__angle--down"></i>   
+                                </div>
+                                <div class="menu__item-nation--menucha">
+                                     <div class="menu__item-nation--menucha1">
+                                         <div class="menu__item-nation--menucon">
+                                             <ul class="menu__item-nation--menu">
+                                                 <li class="menu__item-nation--li">
+                                                     <a class="menu__item-nation--link">
+                                                         <img src="./assets/img/anh1.svg" alt="" width="20px" height="20px" class="menu__item-nation--jpg1">
+                                                         <span class="menu__item-nation--countryname1">Tiếng Việt</span>
+                                                         <i class="menu__item-nation--item ti-check"></i>
+                                                     </a>
+                                                 </li>
+                                                 <li class="menu__item-nation--li">
+                                                     <a class="menu__item-nation--link">
+                                                         <img src="./assets/img/anh 2.svg" alt="" width="20px" height="20px" class="menu__item-nation--jpg1">
+                                                         <span class="menu__item-nation--countryname1">English</span>
+                                                     </a>
+                                                 </li>
+                                                 <li class="menu__item-nation--li">
+                                                     <a class="menu__item-nation--link">
+                                                         <img src="./assets/img/anh 3.svg" alt="" width="20px" height="20px" class="menu__item-nation--jpg1">
+                                                         <span class="menu__item-nation--countryname1">Korean</span>
+                                                     </a>
+                                                 </li>
+                                             </ul>                                   
+                                         </div>
+                                        <div class="menu__item-nation--menucon">
                                          <ul class="menu__item-nation--menu">
                                              <li class="menu__item-nation--li">
                                                  <a class="menu__item-nation--link">
-                                                     <img src="./assets/img/anh1.svg" alt="" width="20px" height="20px" class="menu__item-nation--jpg1">
-                                                     <span class="menu__item-nation--countryname1">Tiếng Việt</span>
+                                                     <b class="menu__item-nation--countryname1">VND</b>
+                                                     <span class="menu__item-nation--countryname1">Việt Nam Đồng</span>
                                                      <i class="menu__item-nation--item ti-check"></i>
                                                  </a>
                                              </li>
                                              <li class="menu__item-nation--li">
                                                  <a class="menu__item-nation--link">
-                                                     <img src="./assets/img/anh 2.svg" alt="" width="20px" height="20px" class="menu__item-nation--jpg1">
-                                                     <span class="menu__item-nation--countryname1">English</span>
+                                                     <b class="menu__item-nation--countryname1">USD</b>
+                                                     <span class="menu__item-nation--countryname1">United States Dollar</span>
                                                  </a>
-                                             </li>
-                                             <li class="menu__item-nation--li">
-                                                 <a class="menu__item-nation--link">
-                                                     <img src="./assets/img/anh 3.svg" alt="" width="20px" height="20px" class="menu__item-nation--jpg1">
-                                                     <span class="menu__item-nation--countryname1">Korean</span>
-                                                 </a>
-                                             </li>
-                                         </ul>                                   
-                                     </div>
-                                    <div class="menu__item-nation--menucon">
-                                     <ul class="menu__item-nation--menu">
-                                         <li class="menu__item-nation--li">
-                                             <a class="menu__item-nation--link">
-                                                 <b class="menu__item-nation--countryname1">VND</b>
-                                                 <span class="menu__item-nation--countryname1">Việt Nam Đồng</span>
-                                                 <i class="menu__item-nation--item ti-check"></i>
-                                             </a>
-                                         </li>
-                                         <li class="menu__item-nation--li">
-                                             <a class="menu__item-nation--link">
-                                                 <b class="menu__item-nation--countryname1">USD</b>
-                                                 <span class="menu__item-nation--countryname1">United States Dollar</span>
-                                             </a>
-                                         </li>  
-                                     </ul>   
-                                    </div>
-                                 </div> 
-                             </div>                                     
-                        </div>
+                                             </li>  
+                                         </ul>   
+                                        </div>
+                                     </div> 
+                                 </div>                                     
+                            </div>
                     </ul>
                 </div>
 
-                <!-- <div class="header__icon-menu">
-                    <i class="ti-menu icon-menu"></i>
-                </div> -->
+        
             </div>
         </header>
 
