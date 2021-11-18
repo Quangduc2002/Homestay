@@ -935,3 +935,94 @@ body{
     }
 
 }
+
+@media (max-width: 320px){
+    .header__navbar{
+        width: 360px;
+    }
+
+    .header__search,
+    .header__search-con{
+        width: 214px;
+    }
+
+    .header__search-input{
+        width: 164px;
+    }
+
+    .header__navbar-menu--item {
+        width: 240px;
+    }
+
+    .menu__item-nation--countryname1{
+        font-size: 1.2rem;
+    }
+
+    .menu__item-nation--menucha{
+        width: 185px;
+    }
+
+    .menu__item{
+        font-size: 1.6rem;
+    }
+
+    .btn{
+        min-width: 110px;
+    }
+
+    .modal__body{
+        left: 12px;
+        width: 300px;
+    }
+
+    .auth-form-socials{
+        display: none;
+    }
+
+    .auth-form__heading,
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .auth-form__help--link {
+        font-size: 1.2rem;
+    }
+
+    .container__avt-imgchar {
+        width: 284px;
+    }
+
+    .greeting__section-title,
+    .extra-bolf{
+        font-size: 2rem;
+    }
+
+    .greeting__section p,
+    .greeting__section-mb,
+    .end__md img{
+        width: 300px;
+    }
+
+    .title__sub-img{
+        width: 280px;
+        height: 140px;
+    }
+
+    .title__link {
+        top: 930px;
+    }
+
+    .title__sub-slick--con,
+    .app-introduce__heading,
+    h2 {
+        width: 280px;
+    }
+
+    .row__wide1-avt {
+        width: 140px;
+    }
+
+    .end__md{
+        padding: 0;
+    }
+}
