@@ -162,3 +162,15 @@
         });
     });
 
+
+    function inbox1(){
+        document.getElementById("inbox1").style.display="none";
+        document.getElementById("inbox2").style.display="block";
+    }
+
+
+    function inbox2(){
+        document.getElementById("inbox1").style.display="block";
+        document.getElementById("inbox2").style.display="none";
+    }
+
