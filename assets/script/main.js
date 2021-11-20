@@ -174,3 +174,20 @@
         document.getElementById("inbox2").style.display="none";
     }
 
+    $(document).ready(function(){
+        $("#abc").click(function(){
+            $("#abc1").fadeToggle("slow");
+          
+    });
+    });
+
+    function dosomething(o)
+	{
+		o.style="border: 1px solid #f65e39; border-radius: 4px";
+	}
+
+    function domouseout(o)
+	{
+		o.style="border: 1px solid #ddd; border-radius: 4px";
+	}
+

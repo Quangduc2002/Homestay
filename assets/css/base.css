@@ -828,6 +828,32 @@ body{
         background-color: gray;
         color: #fff;
     }
+
+    
+    .layout,
+    .footer1__con{
+        padding: 0 20px;
+    }
+
+    .title-sub,
+    .row5{
+        display: block;
+    }
+
+    .title-sub--con1{
+        margin-bottom: 20px;
+    }
+
+    .promotion-box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer1 {
+        margin-top: 60px;
+    }
+    
+    
 }
 
 /* ipx */

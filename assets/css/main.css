@@ -962,3 +962,152 @@ h2{
     background-color: rgb(98 82 147);
 }
 
+/* xem thêm */
+
+.layout{
+    padding: 0 45px;
+}
+
+.layout__con{
+    margin-top: 120px;
+    display: flex;
+
+}
+
+.layout__link{
+    text-decoration: none;
+}
+
+.layout__link p,
+.title-sub--con p{
+    font-size: 1.6rem;
+    color: var(--black-color);
+}
+
+.layout__link .menu{
+    margin-left: 30px;
+}
+
+.title-sub{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-sub--con1{
+    width: 310px;
+    height: 50px;
+    border: 1px solid #ddd;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.title-sub--con h2 {
+    margin: 0;
+}
+
+.title-sub--con2{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 0 20px;
+}
+
+.title-sub--con2__menu{
+    display: flex;
+}
+
+.title-sub--con2__menu p{
+    margin: 0;
+    margin-left: 10px;
+}
+
+.title-sub--con3{
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.title-sub--con3__ul{
+    padding: 0 ;
+}
+
+.title-sub--con3__li{
+    list-style: none;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+}
+
+.title-sub--con3__li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.title-sub--con3__li:hover{
+    background-color: #f5f7fa;
+    cursor: pointer;
+}
+
+.row5{
+    display: flex;
+    justify-content: space-between;
+}
+
+.promotion-box{
+    border: 1px solid #ddd;
+    padding: 0;
+    width: 32%;
+    border-radius: 4px;
+}
+
+.promotion-box__content{
+    padding: 16px 24px 32px;
+}
+
+.promotion-box__content p{
+    font-size: 1.6rem;
+}
+
+.promotion-box__group{
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    margin-bottom: 40px;
+}
+
+.promotion-box__group p{
+    padding: 16px 10px;
+    margin: 0;
+}
+
+.btn-grad{
+    border-radius: 3rem;
+    background-color: var(--primary-color);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-grad--primary{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--whidth-color);
+}
+
+.footer1{
+    border-top: 1px solid #ccc;
+    margin-top: 100px;
+}
+
+.footer1__con{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #999;
+}
