@@ -199,6 +199,5 @@
         else{
             document.getElementById("icon").style.transform="rotate(-180deg)";
         }
-        // document.getElementById("icon").style.transform="rotate(0deg)";
     }
 
