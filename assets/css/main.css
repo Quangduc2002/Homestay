@@ -269,6 +269,12 @@ html{
     margin-left: 6px;
 }
 
+.menu__item-nation--icon{
+    transform: rotate(-180deg);
+    transition: all 0.3s linear;
+    font-size: 1.6rem;
+}
+
 
 .menu__item-nation{
     position: relative;
