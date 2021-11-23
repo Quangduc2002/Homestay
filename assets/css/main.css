@@ -902,10 +902,18 @@ h2{
     margin-left: 22px;
 }
 
-.inbox__text1-con i{
+.inbox__text1-con div{
     width: 10%;
-    text-align: center;
     cursor: pointer;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 4px;
+}
+
+.inbox__text1-con div:hover{
+    background-color: rgb(98 82 147);
 }
 
 .inbox__ul{

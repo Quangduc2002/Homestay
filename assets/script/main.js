@@ -191,3 +191,14 @@
 		o.style="border: 1px solid #ddd; border-radius: 4px";
 	}
 
+    
+    function checkicon(){
+        if(document.getElementById("VND1").style.display == "none"){
+            document.getElementById("icon").style.transform="rotate(0deg)";
+        }
+        else{
+            document.getElementById("icon").style.transform="rotate(-180deg)";
+        }
+        // document.getElementById("icon").style.transform="rotate(0deg)";
+    }
+
