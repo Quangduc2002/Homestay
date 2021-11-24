@@ -85,6 +85,8 @@
         alert("Đăng Nhập Thành Công! ")
     }
 
+
+    // silde show
     $(document).ready(function(){
         $('.autoplay').slick({
             slidesToShow: 5, /* hiện ra 5 ảnh */
@@ -181,15 +183,15 @@
     });
     });
 
-    function dosomething(o)
-	{
-		o.style="border: 1px solid #f65e39; border-radius: 4px";
-	}
+    // function dosomething(o)
+	// {
+	// 	o.style="border: 1px solid #f65e39; border-radius: 4px";
+	// }
 
-    function domouseout(o)
-	{
-		o.style="border: 1px solid #ddd; border-radius: 4px";
-	}
+    // function domouseout(o)
+	// {
+	// 	o.style="border: 1px solid #ddd; border-radius: 4px";
+	// }
 
     
     function checkicon(){
@@ -198,6 +200,19 @@
         }
         else{
             document.getElementById("icon").style.transform="rotate(-180deg)";
+        }
+    }
+
+    function checkicon1(){
+        if(document.getElementById("abc1").style.display == "none"){
+            document.getElementById("icon1").style.transform="rotate(0deg)";
+            document.getElementById("abc").style.border="1px solid #f65e39";
+            document.getElementById("abc").style.borderRadius="4px";
+        }
+        else{
+            document.getElementById("icon1").style.transform="rotate(-180deg)";
+            document.getElementById("abc").style.border="1px solid #ddd";
+            document.getElementById("abc").style.borderRadius="4px";
         }
     }
 

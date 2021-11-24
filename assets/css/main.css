@@ -532,7 +532,7 @@ html{
     outline: none;
     box-shadow: 0 0 5px 0 rgb(246 94 57 / 50%);
     color: var(--primary-color);
-    transition: all 0.5s;
+    transition: all 0.3s;
 
 }
 
@@ -576,7 +576,7 @@ html{
     outline: none;
     box-shadow: 0 0 5px 0 rgb(246 94 57 / 50%);
     color: var(--primary-color);
-    transition: all 0.5s;
+    transition: all 0.3s;
 
 }
 
@@ -1036,6 +1036,11 @@ h2{
 .title-sub--con2__menu p{
     margin: 0;
     margin-left: 10px;
+}
+
+.fa-chevron-down{
+    transform: rotate(-180deg);
+    transition: all 0.3s linear;
 }
 
 .title-sub--con3{
