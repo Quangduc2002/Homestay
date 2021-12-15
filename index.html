@@ -140,12 +140,14 @@
                                                     <input type="text" name="email" class="auth-form__input"  placeholder="Nhập Email">
                                                 </div>
                                                 <div class="auth-form__froup">
-                                                    <input type="password" name="password" class="auth-form__input"  placeholder="Nhập mật khẩu">
-                                                    <i class="far fa-eye-slash"></i>
+                                                    <input id="pass" type="password" name="password" class="auth-form__input"  placeholder="Nhập mật khẩu">
+                                                    <i id="eyeslash" onclick="checkpassword()" class="far fa-eye-slash"></i>
+                                                    <i id="eye" onclick="checkpassword()" style="display: none;" class="far fa-eye"></i>
                                                 </div>
                                                 <div class="auth-form__froup">
-                                                    <input type="password" name="password1" class="auth-form__input"  placeholder="Nhập lại mật khẩu">
-                                                    <i class="far fa-eye-slash"></i>
+                                                    <input id="pass1" type="password" name="password1" class="auth-form__input"  placeholder="Nhập lại mật khẩu">
+                                                    <i id="eyeslash1" onclick="checkpassword1()" class="far fa-eye-slash"></i>
+                                                    <i id="eye1" onclick="checkpassword1()" style="display: none;" class="far fa-eye"></i>
                                                 </div>
                                                 <div class="auth-form__controls">    
                                                     <label for="register" class="btn auth-form__controls-back btn-normal">TRỞ LẠI</label>
@@ -190,8 +192,9 @@
                                                     <input type="text" name="email" class="auth-form__input"  placeholder="Nhập Email">
                                                 </div>
                                                 <div class="auth-form__froup">
-                                                    <input type="password" name="password" class="auth-form__input"  placeholder="Nhập mật khẩu">
-                                                    <i class="far fa-eye-slash"></i>
+                                                    <input id="pass2" type="password" name="password2" class="auth-form__input"  placeholder="Nhập lại mật khẩu">
+                                                    <i id="eyeslash2" onclick="checkpassword2()" class="far fa-eye-slash"></i>
+                                                    <i id="eye2" onclick="checkpassword2()" style="display: none;" class="far fa-eye"></i>
                                                 </div>
                                                 <div class="auth-form__controls auth-form__controls1">    
                                                     <label for="log__in" class="btn auth-form__controls-back btn-normal">TRỞ LẠI</label>

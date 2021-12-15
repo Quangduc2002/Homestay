@@ -162,12 +162,17 @@ body{
     outline: none;
 }
 
-.fa-eye-slash{
+.fa-eye-slash,
+.fa-eye{
     position: absolute;
     margin-top: 30px;
     right: 50px;
     cursor: pointer;
     font-size: 1.2rem;
+}
+
+.fa-eye{
+    margin-top: -26px;
 }
 
 .auth-form__controls {
