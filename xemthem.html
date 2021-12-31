@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt phòng homestay nhanh chóng, trải nghiệm hạng sang tại Luxstay</title>
+    <link rel="icon" href="https://www.luxstay.com/logos/96.png" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- link icon -->
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <!-- html-slick-css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- script bấm vào hiện ra  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/script/main.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="header__navbar">
+                <div class="header__navbar-logo">
+                    <div class="header__navbar-logocon">
+                        <a href="./index.html" class="header__navbar-logo" aria-current="page">
+                            <img width="50px" height="50px" src="./assets/img/avt-title.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-con">
+                            <i class="header__search-icon ti-search"></i>
+                            <input type="text"  class="header__search-input"  placeholder="Tìm kiếm">
+                        </div>
+                        <div class="header__calendar">
+                            <div class="header__user1">
+                                <input type="date" class="data__birth">
+                                <div>Ngày</div>
+                            </div>
+                        </div>
+                        <div class="header__user">
+                            <div id="header1" class="header__user2">
+                                <i class="header__icon ti-user"></i>
+                                <div>Số khách</div>
+                            </div>
+                            <div id="header2" class="header__user-menu">
+                                <div class="header__user-title">
+                                    <ul class="header__user-title--name">
+                                        <div class="header__user-title--namecon">
+                                            <li class="header__user-title--con">Người Lớn</li>
+                                        </div>
+                                        <span role="button" class="header__user-title--input header__user-input">
+                                            <i class="ti-minus"></i>
+                                        </span>
+                                        <div>
+                                            <li class="header__user-title--con">0</li>
+                                        </div>
+                                        <span role="button" class="header__user-title--input">
+                                            <i class="ti-plus"></i>
+                                        </span>
+                                    </ul>
+                                    <ul class="header__user-title--name">
+                                        <div class="header__user-title--namecon">
+                                            <li class="header__user-title--con">Trẻ em</li>
+                                            <li class="header__user-title--con1">Tuổi từ 2-12</li>
+                                        </div>
+                                        <span role="button" class="header__user-title--input header__user-input">
+                                            <i class="ti-minus"></i>
+                                        </span>
+                                        <div>
+                                            <li class="header__user-title--con">0</li>
+                                        </div>
+                                        <span role="button" class="header__user-title--input">
+                                            <i class="ti-plus"></i>
+                                        </span>
+                                    </ul>
+                                    <ul class="header__user-title--name">
+                                        <div class="header__user-title--namecon">
+                                            <li class="header__user-title--con">Trẻ sơ sinh</li>
+                                            <li class="header__user-title--con1">Dưới 2 tuổi</li>
+                                        </div>
+                                        <span role="button" class="header__user-title--input header__user-input ">
+                                            <i class="ti-minus"></i>
+                                        </span>
+                                        <div>
+                                            <li class="header__user-title--con">0</li>
+                                        </div>
+                                        <span role="button" class="header__user-title--input">
+                                            <i class="ti-plus"></i>
+                                        </span>
+                                    </ul>
+                                    <ul class="header__user-title--name cursor-bold--name">
+                                        <li class="cursor-bold">Xóa</li>
+                                        <li class="cursor-bold cursor-bold--primary">Áp dụng</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-icon1 ti-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="header__navbar-menu">
+                    <!-- dùng thẻ label để bấm vào icon thì sẽ checkbox được -->
+                    <label for="nav__mobi-input" class="link__icon-menu">
+                        <i class="ti-menu icon-menu"></i>
+                    </label>
+                    
+                    <input type="checkbox" name="" id="nav__mobi-input" class="nav__input">
+
+                    <label for="nav__mobi-input" class="nav__overlay"></label>
+
+                    <ul class="header__navbar-menu--item">
+                        
+                        <label for="nav__mobi-input" class="menu__item1">
+                            <i class="menu__item-close">&times;</i>
+                            </label>
+                            <li class="menu__item">
+                                <a href="" class="menu__item-link">Guide</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__item-link">Host</a>
+                            </li>
+                            <li for="register" class="menu__item">
+                                <input type="checkbox" name="" id="register" class="register__input">
+                                <label for="register" href="" class="menu__item-link">Đăng kí</label>
+                                <label  for="register" class="modal__overlay"></label>
+                                <div class="modal__body"> 
+                                    <div class="auth-form">
+                                        <div class="auth-form__container">
+                                            <div class="auth-form__header">
+                                                <h3 class="auth-form__heading">Đăng Kí</h3>
+                                                <span class="auth-form__switch-btn">Đăng nhập</span>
+                                            </div>
+
+                                            <form name="form__DK" class="auth-form__form">
+                                                <div class="auth-form__froup">
+                                                    <input type="text" name="email" class="auth-form__input"  placeholder="Nhập Email">
+                                                </div>
+                                                <div class="auth-form__froup">
+                                                    <input type="password" name="password" class="auth-form__input"  placeholder="Nhập mật khẩu">
+                                                    <i class="far fa-eye-slash"></i>
+                                                </div>
+                                                <div class="auth-form__froup">
+                                                    <input type="password" name="password1" class="auth-form__input"  placeholder="Nhập lại mật khẩu">
+                                                    <i class="far fa-eye-slash"></i>
+                                                </div>
+                                                <div class="auth-form__controls">    
+                                                    <label for="register" class="btn auth-form__controls-back btn-normal">TRỞ LẠI</label>
+                                                    <button class="btn btn--primary" type="button" onclick="validform(document.forms.form__DK)">ĐĂNG KÍ</button>
+                                                </div>
+                                            </form>
+                    
+                                        </div>
+
+                                        <div class="auth-form-socials">
+                                            <a href="" class="auth-form-socials--facebook btn btn--size-s btn--with-icon">
+                                                <i class="auth-form-socials-icon1 fab fa-facebook-square"></i>
+                                                <span class="auth-form-socials-title">
+                                                    Kết nối với Facebook
+                                                </span>
+                                            </a>
+                                            <a href="" class="auth-form-socials--google btn btn--size-s btn--with-icon">
+                                                <i class="auth-form-socials-icon2 fab fa-google"></i>
+                                                <span class="auth-form-socials-title1">
+                                                    Kết nối với Google
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <input style="display: none;" type="checkbox" name="" id="log__in" class="log__in--input">
+                                <label for="log__in" href="" class="menu__item-link">Đăng nhập</label>
+                                <label  for="log__in" class="modal__overlay"></label>
+                                <div class="modal__body">
+                                    <div class="auth-form auth-form1">
+                                        <div class="auth-form__container">
+                                            <div class="auth-form__header">
+                                                <h3 class="auth-form__heading">
+                                                    Đăng nhập
+                                                </h3>
+                                                <span class="auth-form__switch-btn">Đăng Kí</span>
+                                            </div>
+                                            <form name="form__DN" class="auth-form__form">
+                                                <div class="auth-form__froup">
+                                                    <input type="text" name="email" class="auth-form__input"  placeholder="Nhập Email">
+                                                </div>
+                                                <div class="auth-form__froup">
+                                                    <input type="password" name="password" class="auth-form__input"  placeholder="Nhập mật khẩu">
+                                                    <i class="far fa-eye-slash"></i>
+                                                </div>
+                                                <div class="auth-form__controls auth-form__controls1">    
+                                                    <label for="log__in" class="btn auth-form__controls-back btn-normal">TRỞ LẠI</label>
+                                                    <button type="button" class="btn btn--primary"  onclick="validform1(document.forms.form__DN)">ĐĂNG NHẬP</button>
+                                                </div>
+                                            </form>
+                                
+                                            <div class="auth-form__aside">
+                                                <div class="auth-form__help">
+                                                    <a href="" class="auth-form__help--link auth-form__help-forgot1">
+                                                        Quên mật khẩu ?
+                                                    </a>
+                                                    <span class="auth-form__help-separate"></span>
+                                                    <a href="" class="auth-form__help--link auth-form__help-forgot2">
+                                                        Cần trợ giúp ?
+                                                    </a>
+                                                </div>
+                                            </div>
+                                
+                    
+                                        </div>
+                                        <div class="auth-form-socials">
+                                            <a href="" class="auth-form-socials--facebook btn btn--size-s btn--with-icon">
+                                                <i class="auth-form-socials-icon1 fab fa-facebook-square"></i>
+                                                <span class="auth-form-socials-title">
+                                                    Đăng nhập Facebook
+                                                </span>
+                                            </a>
+                                            <a href="" class="auth-form-socials--google btn btn--size-s btn--with-icon">
+                                                <i class="auth-form-socials-icon2 fab fa-google"></i>
+                                                <span class="auth-form-socials-title">
+                                                    Đăng nhập Google
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="menu__item menu__item-nation">
+                                <div onclick="checkicon()" id="VND" class="menu__item-nation--con1">
+                                      <img src="./assets/img/anh1.svg" alt="" width="24px" height="24px" class="menu__item-nation--jpg">
+                                      <span class="menu__item-nation--countryname">VND</span>
+                                      <i id="icon" class="menu__item-nation--icon fas fa-caret-down icon__angle--down"></i>   
+                                </div>
+                                <div style="display: none;" id="VND1" class="menu__item-nation--menucha">
+                                     <div  class="menu__item-nation--menucha1">
+                                         <div class="menu__item-nation--menucon">
+                                             <ul class="menu__item-nation--menu">
+                                                 <li class="menu__item-nation--li">
+                                                     <a href="#" class="menu__item-nation--link">
+                                                         <img src="./assets/img/anh1.svg" alt="" width="20px" height="20px" class="menu__item-nation--jpg1">
+                                                         <span class="menu__item-nation--countryname1">Tiếng Việt</span>
+                                                         <i class="menu__item-nation--item ti-check"></i>
+                                                     </a>
+                                                 </li>
+                                                 <li  class="menu__item-nation--li">
+                                                     <a href="./English.html" class="menu__item-nation--link">
+                                                         <img src="./assets/img/anh 2.svg" alt="" width="20px" height="20px" class="menu__item-nation--jpg1">
+                                                         <span class="menu__item-nation--countryname1">English</span>
+                                                     </a>
+                                                 </li>
+                                                 <li class="menu__item-nation--li">
+                                                     <a class="menu__item-nation--link">
+                                                         <img src="./assets/img/anh 3.svg" alt="" width="20px" height="20px" class="menu__item-nation--jpg1">
+                                                         <span class="menu__item-nation--countryname1">Korean</span>
+                                                     </a>
+                                                 </li>
+                                             </ul>                                   
+                                         </div>
+                                        <div class="menu__item-nation--menucon">
+                                         <ul class="menu__item-nation--menu">
+                                             <li class="menu__item-nation--li">
+                                                 <a class="menu__item-nation--link">
+                                                     <b class="menu__item-nation--countryname1">VND</b>
+                                                     <span class="menu__item-nation--countryname1">Việt Nam Đồng</span>
+                                                     <i class="menu__item-nation--item ti-check"></i>
+                                                 </a>
+                                             </li>
+                                             <li class="menu__item-nation--li">
+                                                 <a class="menu__item-nation--link">
+                                                     <b class="menu__item-nation--countryname1">USD</b>
+                                                     <span class="menu__item-nation--countryname1">United States Dollar</span>
+                                                 </a>
+                                             </li>  
+                                         </ul>   
+                                        </div>
+                                     </div> 
+                                 </div>                                     
+                            </div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="layout">
+            <div class="layout__con">
+                <a class="layout__link" href="">
+                    <p>Luxstay</p>
+                </a>
+                <a class="layout__link" href="">
+                    <p class="menu">Danh sách ưu đãi</p>
+                </a>
+            </div>
+
+            <div class="title-sub">
+                <div class="title-sub--con">
+                    <h2>Ưu đãi độc quyền🔥🔥</h2>
+                    <p>Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!</p>
+                </div>
+
+                <div class="title-sub--con1">
+                    <div id="abc" onclick="checkicon1();" class="title-sub--con2">
+                        <div class="title-sub--con2__menu">
+                            <span>Ưu đãi: </span>
+                            <p>Tất cả</p>
+                        </div>
+
+                        <div class="title-sub--con2__icon">
+                            <i id="icon1" class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div style="display: none;" id="abc1" class="title-sub--con3">
+                        <ul class="title-sub--con3__ul">
+                            <li class="title-sub--con3__li">
+                               <a style="color: #EE4D2D;" href="">Tất cả</a> 
+                            </li>
+                            <li class="title-sub--con3__li">
+                                <a href=""> Từ Luxstay </a> 
+                            </li>
+                            <li class="title-sub--con3__li">
+                                <a href="">Từ đối tác của Luxstay</a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row5">
+                <div class="promotion-box">
+                    <div class="promotion-box__cover">
+                        <img width="100%" src="./assets/img/anh4.1.jpg" alt="">
+                    </div>
+
+                    <div class="promotion-box__content">
+                        <p>Kỳ nghỉ an lành với "Thẻ Xanh"</p>
+                        <div class="promotion-box__group">
+                            <p>Thời gian lưu trú: Không giới hạn</p>
+                        </div>
+                        <div class="btn-grad">
+                            <a href="" class="btn-grad--primary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promotion-box">
+                    <div class="promotion-box__cover">
+                        <img width="100%" src="./assets/img/anh5.jpg" alt="">
+                    </div>
+
+                    <div class="promotion-box__content">
+                        <p>Ưu đãi độc quyền dành cho chủ thẻ OCB</p>
+                        <div class="promotion-box__group">
+                            <p>Thời gian lưu trú: Không giới hạn</p>
+                        </div>
+                        <div class="btn-grad">
+                            <a href="" class="btn-grad--primary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promotion-box">
+                    <div class="promotion-box__cover">
+                        <img width="100%" src="./assets/img/anh6.jpg" alt="">
+                    </div>
+
+                    <div class="promotion-box__content">
+                        <p>Kỳ nghỉ an lành với "Thẻ Xanh"</p>
+                        <div class="promotion-box__group">
+                            <p>Thời gian lưu trú: Không giới hạn</p>
+                        </div>
+                        <div class="btn-grad">
+                            <a href="" class="btn-grad--primary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer1">
+            <div class="footer1__con">
+                <p>© 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam - MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn bản của chúng tôi.</p>
+                <p>Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586.</p>
+                <p>Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp: 06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
