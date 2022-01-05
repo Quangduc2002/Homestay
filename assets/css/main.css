@@ -410,13 +410,18 @@ html{
 
 
 #img1:checked ~ .container__avtcon .container__avt-img1{
-    margin-left: -100%;
+    margin-left: -0%;
     transition: linear 0.5s ;
 }
 
 
 #img2:checked ~ .container__avtcon .container__avt-img1{
-    margin-left: 0;
+    margin-left: -100%;
+    transition: linear 0.5s;
+}
+
+#img3:checked ~ .container__avtcon .container__avt-img1{
+    margin-left: -200%;
     transition: linear 0.5s;
 }
 
