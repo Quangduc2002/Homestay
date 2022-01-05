@@ -222,7 +222,7 @@
     function checkpassword(){
         if(document.getElementById("pass").type == "password"){
             document.getElementById("pass").type = "text";
-            document.getElementById("eye").style.display = "block";
+            document.getElementById("eye").style.display = "inline-block";
             document.getElementById("eyeslash").style.display = "none";
         }
         else if(document.getElementById("pass").type == "text"){
@@ -235,7 +235,7 @@
     function checkpassword1(){
         if(document.getElementById("pass1").type == "password"){
             document.getElementById("pass1").type = "text";
-            document.getElementById("eye1").style.display = "block";
+            document.getElementById("eye1").style.display = "inline-block";
             document.getElementById("eyeslash1").style.display = "none";
         }
         else if(document.getElementById("pass1").type == "text"){
@@ -248,7 +248,7 @@
     function checkpassword2(){
         if(document.getElementById("pass2").type == "password"){
             document.getElementById("pass2").type = "text";
-            document.getElementById("eye2").style.display = "block";
+            document.getElementById("eye2").style.display = "inline-block";
             document.getElementById("eyeslash2").style.display = "none";
         }
         else if(document.getElementById("pass2").type == "text"){

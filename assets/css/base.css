@@ -182,15 +182,22 @@ body{
 .fa-eye-slash,
 .fa-eye{
     position: absolute;
-    margin-top: -26px;
+    margin-top: -28px;
     right: 50px;
     cursor: pointer;
     font-size: 1.2rem;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    width: 22px;
 }
 
-.fa-eye{
-    margin-top: -44px;
+.fa-eye-slash:hover,
+.fa-eye:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
 }
+
 
 .auth-form__controls {
     margin-top: 80px;

@@ -33,10 +33,13 @@ function Validator(options){
                 errorElement.innerText = errorMessage;
                 // khi có lỗi hiện lên màu đỏ
                 getParent(inputElement, options.formGroupSelector).classList.add('invalid');
+                getParent(inputElement, options.formGroupSelector).classList.remove('invali');
+                
             }
             else{
                 errorElement.innerText = '';
                 getParent(inputElement, options.formGroupSelector).classList.remove('invalid');
+                getParent(inputElement, options.formGroupSelector).classList.add('invali');
 
             }
             return !errorMessage;
